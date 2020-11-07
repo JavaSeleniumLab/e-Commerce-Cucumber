@@ -18,12 +18,9 @@ import org.junit.runner.RunWith;
 
         snippets = cucumber.api.SnippetType.CAMELCASE,
 
-        tags = {"@login1"},
+        //tags = {"@login1"},
 
         monochrome = true
-
-
-
 
 )
 public class testRunner {

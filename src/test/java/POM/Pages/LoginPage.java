@@ -6,8 +6,8 @@ public class LoginPage extends basePage{
 
     private By firstNameLocator = By.xpath("//input[@name='firstname']");
     private By lastNameLocator = By.xpath("//input[@name='lastname']");
-    private By emailOrPhoneNumberLocator = By.xpath("//input[@name='reg_email__']");
-    private By newPasswordLocator = By.xpath("//input[@name='reg_passwd__']");
+    private By emailOrPhoneNumberLocator = By.xpath("//input[@name='email']");
+    private By newPasswordLocator = By.xpath("//input[@name='pass']");
     private By dateDropdownLocator = By.id("day");
     private By monthDropdownLocator = By.id("month");
     private By yearDropdownLocator = By.id("year");
@@ -19,6 +19,7 @@ public class LoginPage extends basePage{
     private By signInEmailOrPhoneLocator = By.id("email");
     private By signInPasswordLocator = By.id("pass");
     private By signInButtonLocator = By.name("login");
+    private By errorMessage = By.xpath("//div[@class='_9ay7']");
 
     //Methods
     //@Step("Sign In: Enter email or phone number as {0}")
@@ -81,6 +82,10 @@ public class LoginPage extends basePage{
 
     public void clickCreateNewAccount() {
         clickThis(newAccountButtonLocator);
+    }
+
+    public String getErrorText (){
+        return getText(errorMessage);
     }
 
 }

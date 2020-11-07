@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 public class DriverWrapper {
     private static WebDriver driver;
 
-    public void initDriver() {
+    public static void initDriver() {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\golde\\Downloads\\chromedriver_win32\\chromedriver.exe");
         driver = new ChromeDriver();
@@ -29,7 +29,7 @@ public class DriverWrapper {
 
 
 
-    public void quitBrowser(){
+    public static void quitBrowser(){
         driver.quit();
     }
 
