@@ -21,7 +21,6 @@ class basePage extends DriverWrapper {
         }
 
 
-
         public WebElement findWebElement(By locator){
             return getDriver().findElement(locator);
         }
