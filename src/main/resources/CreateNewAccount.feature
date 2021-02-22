@@ -8,7 +8,7 @@ Feature: Register new User
     And Close the browser
 
 
-    
+
 
 
 
