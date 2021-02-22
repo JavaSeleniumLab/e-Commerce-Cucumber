@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         // path of your feature files
-        features = {"src/main/resources/Login.feature"},
+        features = {"src/main/resources"},
 
         // Specify the step definition package
         glue = {"StepDefinition", "DriverPkg"},

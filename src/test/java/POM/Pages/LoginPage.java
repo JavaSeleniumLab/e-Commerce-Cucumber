@@ -20,6 +20,7 @@ public class LoginPage extends basePage{
     private By signInPasswordLocator = By.id("pass");
     private By signInButtonLocator = By.name("login");
     private By errorMessage = By.xpath("//div[@class='_9ay7']");
+    private By signUpText = By.xpath("//div[@class='_52lr fsm fwn fcg']");
 
     //Methods
     //@Step("Sign In: Enter email or phone number as {0}")
@@ -86,6 +87,10 @@ public class LoginPage extends basePage{
 
     public String getErrorText (){
         return getText(errorMessage);
+    }
+
+    public String verifyText(){
+       return getText(signUpText);
     }
 
 }
